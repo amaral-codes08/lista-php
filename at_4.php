@@ -1,23 +1,23 @@
 <?php
 
-function esconderCpf($numero)
+function criarSenha($quantidade)
 {
-    $tamanho = strlen($numero);
-    $numero = str_split($numero);
+    $simbolos = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789!@#$%^&*()_+-=[]{}|;':,./<>?";
+    $totalSimbolos = strlen($simbolos);
+    $senha = "";
 
-    for ($i = 0; $i < ($tamanho - 4); $i++) {
-        $numero[$i] = "*";
+    for ($contador = 0; $contador < $quantidade; $contador++) {
+        $posicao = random_int(0, $totalSimbolos - 1);
+        $senha .= $simbolos[$posicao];
     }
 
-    $cpfFormatado = implode("", $numero);
-
-    return $cpfFormatado;
+    return $senha;
 }
 
-$cpf = "98765432100";
+$numeroCaracteres = 1981;
+$senhaGerada = criarSenha($numeroCaracteres);
 
-echo "O CPF é: " . $cpf;
-
-echo "<br>CPF Formatado: " . esconderCpf($cpf);
+echo "Quantidade de caracteres: " . $numeroCaracteres;
+echo "<br>Senha gerada: " . $senhaGerada;
 
 ?>
