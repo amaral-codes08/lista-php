@@ -29,7 +29,7 @@ function descriptografarMensagem($texto, $deslocamento = 3)
 	return criptografarMensagem($texto, 26 - ($deslocamento % 26));
 }
 
-$mensagem = "Besta fugana da febre do rato bexiga tapoca da mizera";
+$mensagem = "coloque algo ruim aqui amaral seu burro";
 $criptografada = criptografarMensagem($mensagem);
 echo "Original: " . $mensagem;
 echo "<br>Criptografada: " . $criptografada;

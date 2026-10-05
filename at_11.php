@@ -14,7 +14,7 @@ function formatarTexto($texto)
 	];
 }
 
-$resultado = formatarTexto("Davi Batixta o caba mais arretado do SESI SENAI");
+$resultado = formatarTexto("O stitchi é muito legal");
 echo "Maiúsculas: " . $resultado["maiusculas"];
 echo "<br>Minúsculas: " . $resultado["minusculas"];
 echo "<br>Título: " . $resultado["titulo"];

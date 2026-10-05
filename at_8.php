@@ -7,6 +7,6 @@ function ordenarNomes($texto)
 	return $nomes;
 }
 
-$nomesCoisados = ordenarNomes("Lucas Onofore, Davi Batixta, John Richard, Caio Leite");
+$nomesCoisados = ordenarNomes("Luiza Baptista,Lucas Amaral,Gabriel Barbosa,Bruno Henrique");
 echo implode(", ", $nomesCoisados);
 ?>

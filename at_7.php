@@ -19,7 +19,7 @@ function calcularDesconto($valor)
 	];
 }
 
-$valorCoisado = calcularDesconto(6767);
+$valorCoisado = calcularDesconto(1234);
 echo "Valor original: R$ " . $valorCoisado["original"];
 echo "<br>Desconto: R$ " . $valorCoisado["desconto"];
 echo "<br>Valor final: R$ " . $valorCoisado["final"];
